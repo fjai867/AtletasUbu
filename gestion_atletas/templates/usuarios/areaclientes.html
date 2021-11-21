@@ -8,8 +8,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-     <!-- ICONOS EN LOS BOTONES AWENSOME -->
-     <link href="{% static 'gestion_atletas/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+
+    
+
+    <!-- ICONOS EN LOS BOTONES AWENSOME -->
+    <link href="{% static 'gestion_atletas/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
 
     <title>Area Personal</title>
   </head>
@@ -39,6 +42,11 @@
  <!-- Navbar -->
  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
+
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{%url 'inicio' %}">Gestión de Atletas</a>
+      <button class="navbar-toggler btn-primary" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
      
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
